@@ -220,9 +220,9 @@
 
     <div class="heroe">
 
-        <h1>Welcome to CodeIgniter <?= CodeIgniter\CodeIgniter::CI_VERSION ?></h1>
+        <h1>Welcome Muhammad Rafi Satria</h1>
 
-        <h2>The small framework with powerful features</h2>
+        <h2>2117051046</h2>
 
     </div>
 
