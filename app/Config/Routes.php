@@ -1,6 +1,7 @@
 <?php
 
-use app\Controllers\home;
+use App\Controllers\Home;
+use App\Controllers\UserController;
 use CodeIgniter\Router\RouteCollection;
 
 /**
@@ -8,6 +9,8 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
-$routes->get('/profile/(:any)/(:any)/(:any)', 'Home::profile/$1/$2/$3');
-
+// $routes->get('/profile/(:any)/(:any)/(:any)', 'User::profile/$1/$2/$3');
+$routes->get('/user/profile', [UserController::class, 'profile']);
 // $routes->get('/profile/(:any)/(:any)/(:any)', [Home::class, 'profile']);
+$routes->get('/user/create', [UserController::class, 'create']);
+$routes->post('/user/store', [UserController::class, 'store']);
