@@ -10,16 +10,16 @@
     <center>
             <table class="bio">
                 <tr>
-                    <td><p class="data"><img class="foto" src="<?= base_url('assets/img/foto.jpg'); ?>" alt="Foto"></p></td>
+                    <td><p class="data"><img class="foto" src="<?= $user['foto'] ?? '<default-foto>' ?>" alt="Foto"></p></td>
                 </tr>   
                 <tr>
-                    <td><p class="data"><?php echo $nama ?></p></td>
+                    <td><p class="data"><?= $user['nama'] ?></p></td>
                 </tr>
                 <tr>
-                    <td><p class="data"><?php echo $kelas ?></p></td>
+                    <td><p class="data"><?= $user['npm'] ?></p></td>
                 </tr>
                 <tr>
-                    <td><p class="data"><?php echo $npm ?></p></td>
+                    <td><p class="data"><?= $user['nama_kelas'] ?></p></td>
                 </tr>
             </table>
     </center>

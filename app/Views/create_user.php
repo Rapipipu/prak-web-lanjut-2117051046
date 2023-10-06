@@ -2,7 +2,7 @@
 
 <?= $this->section('content')?>
     <h1 style="margin-top:30px;">Form Tambah User</h1>
-    <form action="<?= base_url('/user/store') ?>" method="POST" style="margin-top:50px;">
+    <form action="<?= base_url('/user/store') ?>" method="POST" style="margin-top:50px;" enctype="multipart/form-data">
         <div class="mb-3 row">
             <label for="inputPassword" class="col-sm-2 col-form-label">Nama</label>
             <div class="col-sm-10">
@@ -41,6 +41,13 @@
                         }
                         ?>
                 </select>
+            </div>
+        </div>
+        
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Foto</label>
+            <div class="col-sm-10">
+                <input class="form-control" type="file" id="formFile" name="foto">
             </div>
         </div>
 
