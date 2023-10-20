@@ -1,7 +1,16 @@
 <?= $this->extend('layouts/app')?>
 
 <?= $this->section('content')?>
-<h1 style="margin-top:30px; margin-left: 30px ;">User</h1>
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="<?= base_url('/user')?>" style="font-size : 25px;">User</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="<?= base_url('/kelas')?>"style="font-size : 25px;">Kelas</a>
+    </li>
+</ul>
+
+<center><h1>User</h1></center>
 <a href="<?= base_url('/user/create') ?>"><Button class="btn btn-primary" style="margin-top : 20px; margin-left : 20px; margin-bottom : 30px;">Tambah Data</Button></a>
     <table class="table">
         <thead>
